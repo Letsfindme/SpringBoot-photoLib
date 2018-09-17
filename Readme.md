@@ -67,8 +67,8 @@ Example
 
 ## Copyleft
 
-This project is licensed under the Copyleft License .
+This project is licensed under the Copyleft License.
 
 ## Acknowledgments
 
-* This project is developed for educational purposes only 
+* This project is developed for educational purposes only.
