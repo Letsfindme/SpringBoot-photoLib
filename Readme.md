@@ -1,6 +1,6 @@
 # PhotoLib
 
-This project is a constructed to test Spring Boot framework 
+This project is constructed to test Spring Boot framework 
 
 ## Getting Started
 
