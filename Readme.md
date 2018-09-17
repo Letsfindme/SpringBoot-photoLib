@@ -67,7 +67,7 @@ Example
 
 ## Copyleft
 
-This project is licensed under the Copyleft License 
+This project is licensed under the Copyleft License .
 
 ## Acknowledgments
 
