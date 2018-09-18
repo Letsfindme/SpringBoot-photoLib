@@ -20,7 +20,7 @@ public class UserEntity implements Serializable {
 
 
 
-   // private static final long serialVersionUID = 6835192601898364289L;
+   private static final long serialVersionUID = 6835192601898364289L;
 
 
 
