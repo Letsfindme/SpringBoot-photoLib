@@ -23,7 +23,7 @@ public class UserServiceImp implements UserService {
 
 
         userEntity.setEncryptedPassword("root");
-        userEntity.setUserId("user");
+        userEntity.setUserId("users");
 
         UserEntity storedUserDetails = userRepository.save(userEntity);
 
