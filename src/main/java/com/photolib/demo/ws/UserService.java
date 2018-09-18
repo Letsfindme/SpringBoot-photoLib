@@ -1,6 +1,6 @@
-package ws.service;
+package com.photolib.demo.ws;
 
-import Model.UserDtoShared;
+import com.photolib.demo.Model.UserDtoShared;
 
 
 

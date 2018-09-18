@@ -1,11 +1,10 @@
-package ws.service;
+package com.photolib.demo.ws;
 
-import Model.UserDtoShared;
+import com.photolib.demo.Model.UserDtoShared;
+import com.photolib.demo.ws.service.io.entity.UserEntity;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ws.UserRepository;
-import ws.service.io.entity.UserEntity;
 
 
 @Service
@@ -23,13 +22,13 @@ public class UserServiceImp implements UserService {
         BeanUtils.copyProperties(user, userEntity);
 
 
-        //userEntity.setEncryptedPassword("root");
-//        userEntity.setUserId("user");
+        userEntity.setEncryptedPassword("root");
+        userEntity.setUserId("user");
 
-  //      UserEntity storedUserDetails = userRepository.save(userEntity);
+        UserEntity storedUserDetails = userRepository.save(userEntity);
 
         UserDtoShared returnValue = new UserDtoShared();
-    //    BeanUtils.copyProperties(storedUserDetails, returnValue);
+        BeanUtils.copyProperties(storedUserDetails, returnValue);
 
 
         return returnValue;

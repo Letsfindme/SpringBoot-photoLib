@@ -1,13 +1,13 @@
-package controller;
+package com.photolib.demo.controller;
 
 
-import Model.UserDetailsRequestModel;
-import Model.UserDtoShared;
-import Model.UserRestResponseModel;
+import com.photolib.demo.Model.UserDetailsRequestModel;
+import com.photolib.demo.Model.UserDtoShared;
+import com.photolib.demo.Model.UserRestResponseModel;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ws.service.UserService;
+import com.photolib.demo.ws.UserService;
 
 
 

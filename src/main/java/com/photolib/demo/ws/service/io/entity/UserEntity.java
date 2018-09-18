@@ -1,4 +1,4 @@
-package ws.service.io.entity;
+package com.photolib.demo.ws.service.io.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,14 +7,18 @@ import lombok.Setter;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-*/import java.io.Serializable;
+*/import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import java.io.Serializable;
 
 
 @Setter
 @Getter
 
 
-//@Entity(name="user")
+@Entity(name="user")
 public class UserEntity implements Serializable {
 
 
@@ -24,7 +28,7 @@ public class UserEntity implements Serializable {
 
 
 
-   /* @Id
+    @Id
     @GeneratedValue
     private long id;
 
@@ -47,6 +51,6 @@ public class UserEntity implements Serializable {
     @Column(nullable=false, columnDefinition = "boolean default false")
     private Boolean emailVerificationStatus;
 
-*/
+
 
 }
