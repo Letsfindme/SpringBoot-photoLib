@@ -22,7 +22,7 @@ public class UserController {
     UserService userService;
 
 
-    @GetMapping("/test")
+    @GetMapping
     public String getUser(){
         return "getUser was called";
     }
@@ -33,11 +33,9 @@ public class UserController {
         UserRestResponseModel returnValue = new UserRestResponseModel();
 
         UserDtoShared userDto =new UserDtoShared();
-
         BeanUtils.copyProperties(userDetails, userDto);
 
         UserDtoShared createdUser =userService.createUser(userDto);
-
         BeanUtils.copyProperties(createdUser,returnValue);
 
 
