@@ -1,4 +1,4 @@
-package com.photolib.demo.ws.service.io.entity;
+package com.photolib.demo.io.entity;
 
 import lombok.Getter;
 import lombok.Setter;

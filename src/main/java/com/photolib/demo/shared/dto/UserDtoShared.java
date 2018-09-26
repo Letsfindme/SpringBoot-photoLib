@@ -1,4 +1,4 @@
-package com.photolib.demo.Model;
+package com.photolib.demo.shared.dto;
 
 import lombok.Getter;
 import lombok.Setter;

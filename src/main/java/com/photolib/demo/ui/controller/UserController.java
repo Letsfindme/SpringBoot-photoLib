@@ -1,13 +1,13 @@
-package com.photolib.demo.controller;
+package com.photolib.demo.ui.controller;
 
 
-import com.photolib.demo.Model.UserDetailsRequestModel;
-import com.photolib.demo.Model.UserDtoShared;
-import com.photolib.demo.Model.UserRestResponseModel;
+import com.photolib.demo.ui.model.request.UserDetailsRequestModel;
+import com.photolib.demo.shared.dto.UserDtoShared;
+import com.photolib.demo.ui.model.response.UserRestResponseModel;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.photolib.demo.ws.UserService;
+import com.photolib.demo.service.UserService;
 
 
 
@@ -28,7 +28,7 @@ public class UserController {
     }
 
     @PostMapping
-    public UserRestResponseModel createUser(@RequestBody UserDetailsRequestModel userDetails){
+    public UserRestResponseModel postCreateUsers(@RequestBody UserDetailsRequestModel userDetails){
 
         UserRestResponseModel returnValue = new UserRestResponseModel();
 

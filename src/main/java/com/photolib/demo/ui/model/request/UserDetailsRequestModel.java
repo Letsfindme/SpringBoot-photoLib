@@ -1,18 +1,18 @@
-package com.photolib.demo.Model;
+package com.photolib.demo.ui.model.request;
 
 
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
 @Setter
+@Getter
+public class UserDetailsRequestModel {
 
-public class UserRestResponseModel {
 
-    private String userId;
+
     private String firstName;
     private String lastName;
     private String email;
-
+    private String password;
 
 }
